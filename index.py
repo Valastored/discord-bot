@@ -11,7 +11,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 async def on_ready():
     print(f'We have logged in as {bot.user}')
 
-@bot.slash_command(description="Replies with pong!")
+@bot.slash_command(description="activate the discord develloper badge")
 async def badge(interaction: nextcord.Interaction):
     await interaction.send("Hello!")
 
